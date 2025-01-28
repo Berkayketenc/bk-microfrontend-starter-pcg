@@ -35,7 +35,10 @@ Bu proje, frontend mikro servis mimarisi kullanarak birden fazla uygulamanın na
     docker-compose up --build
     ```
 4. Bridge ağı oluşturun:
+
+    ```bash
     docker network create bk-micro-frontend
+    ```
 
 5. Bridge ağına containerlarınızı bağlayın: 
     ```bash   
@@ -88,10 +91,11 @@ This project demonstrates how to manage multiple applications using a frontend m
     docker-compose up --build
     ```
 4. Create a bridge network:
+    ```bash
     docker network create bk-micro-frontend
-
+    ```
 5. Connect your containers to the bridge network:    
-       ```bash   
+    ```bash   
     docker network connect bk-micro-frontend app-child-app-1-1
     ```
 
