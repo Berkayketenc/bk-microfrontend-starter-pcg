@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  parent-app:
+    build:
+      context: ./parent-app
+      dockerfile: Dockerfile
+    networks:
+      - bk-micro-frontend
+    expose:
+      - "5173"
+
+  child-app-1:
+    build:
+      context: ./child-app-1
+      dockerfile: Dockerfile
+    networks:
+      - bk-micro-frontend
+    expose:
+      - "5174"
+
+  child-app-2:
+    build:
+      context: ./child-app-2
+      dockerfile: Dockerfile
+    networks:
+      - bk-micro-frontend
+    expose:
+      - "5175"
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
+    networks:
+      - bk-micro-frontend
+
+networks:
+  bk-micro-frontend:
+    driver: bridge

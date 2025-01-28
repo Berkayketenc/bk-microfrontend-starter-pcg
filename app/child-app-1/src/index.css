@@ -1,0 +1,7 @@
+.list-page-root{
+  display: flex;
+}
+
+.list-page-title{
+  font-size: 24px;
+}

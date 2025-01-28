@@ -1,0 +1,71 @@
+.root-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-container {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-container nav {
+  margin-top: 1rem;
+}
+
+.header-container nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-container nav ul li {
+  display: inline;
+}
+
+.header-container li {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.header-container nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header-container nav ul li a:hover {
+  color: lemonchiffon;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lemonchiffon;
+  padding: 2rem;
+}
+
+.content-container-title {
+  font-size: 9rem;
+  opacity: 0.1;
+  position: absolute;
+  user-select: none;
+  text-align: center;
+}
+
+.footer-container {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
