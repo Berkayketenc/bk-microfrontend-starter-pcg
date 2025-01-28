@@ -20,6 +20,9 @@ Bu proje, frontend mikro servis mimarisi kullanarak birden fazla uygulamanın na
 - React Router
 - Vite Federation
 
+### Önemli
+Docker ile kaldırdıktan sonra, Nginx yapılandırması sayesinde tarayıcınızın adres çubuğuna http://localhost/ veya http://localhost/list yazarak uygulamaya docker üzerinden erişebilirsiniz.
+
 ### Kurulum
 
 1. Bu projeyi klonlayın:
@@ -75,6 +78,9 @@ This project demonstrates how to manage multiple applications using a frontend m
 - Redux
 - React Router
 - Vite Federation
+
+### Important
+After deploying with Docker, you can access the application through Docker by typing http://localhost/ or http://localhost/list into your browser's address bar, thanks to the Nginx configuration.
 
 ### Setup
 
